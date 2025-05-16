@@ -29,6 +29,16 @@
       "TWR": "training",
       "APP": "false",
       "CTR": "false"
+    },
+    {
+      "CID": 1662327,
+      "Name": "Ziad Al Dahab",
+      "Rating": "S1",
+      "Title": "Aerodrome Controller",
+      "GND": "true",
+      "TWR": "training",
+      "APP": "false",
+      "CTR": "false"
     }
   ]
 }
