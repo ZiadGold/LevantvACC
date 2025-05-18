@@ -1,0 +1,145 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<!-- <script>
+    const element = document.querySelector('.md-banner__inner.md-grid.md-typeset');
+    if (element) {
+    element.remove();
+    }
+
+</script> -->
+<link rel="stylesheet" href="assets/stylesheets/home.css">
+<!-- Hero -->
+<style>
+    
+</style>
+<section class="container">
+    <!-- Background Video -->
+    <!-- <video autoplay muted loop playsinline class="bg-media">
+        <source src="../assets/videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+    <img id="darkmodeimage" src="../assets/images/darkmodeimage.jpg" alt="Background" class="bg-media">
+    <img id="lightmodeimage" src="../assets/images/lightmodeimage.jpg" alt="Background" class="bg-media">
+
+    <!-- Overlay Content -->
+    <div class="md-grid md-typeset">
+        <div class="hero">
+            <div class="hero-items">
+                <div class="left">
+                    <h1>#Lebanon #Syria #Iraq</h1>
+                    <p>Welcome to the Levant vACC Library! Home to our policies, pilot resources, and controller materials! Begin exploring by navigating the menu above!</p>
+                </div>
+                <div class="right">
+                    <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}"
+                       class="md-button md-button--primary">
+                        <span>Join us
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 25 20" fill="none">
+                                <path d="M2 10H23.5M23.5 10L15.5 18M23.5 10L15.5 2" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fade"></div>
+</section>
+
+<!-- Page links -->
+
+<!-- <div class="lowerSection">
+    <div class="md-grid md-typeset">
+        <div class="feature">
+            <h2>Featured Sections</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <a href="foundations/">
+                        <h3>Foundations</h3>
+
+                        <p>
+                            Explore the essentials of air traffic control in this section, including our vMATS (Manual of Air Traffic Services), radiotelephony guides, client tutorials, and more.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="aerodrome/">
+                        <h3>Standard Operating Procedures</h3>
+
+                        <p>
+                            Access our aerodrome, terminal, and enroute standard operating procedures in this section! All airport-specific materials are available here.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="vacc_documents/">
+                        <h3>Policies</h3>
+
+                        <p>
+                            Searching for our vACC policies for controllers, events guidelines, training syllabus, and more? You’ll find all of these resources in this section of the library.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+
+
+{% endblock %}
+{% block content %}
+
+
+
+<div class="md-typeset__scrollwrap" id="roster-container">
+    <h3 class="subtitle">About us</h3>
+    <p>The Levant vACC is a proud member of the VATSIM Middle East Division, dedicated to providing high-quality virtual air traffic control services for the airspaces of Lebanon, Syria, and Iraq. Our mission is to create a realistic and engaging environment for pilots and controllers alike, promoting aviation excellence through training, professionalism, and community collaboration. Whether you're flying into the bustling skies over Beirut, navigating the airways of Baghdad, or exploring the historic routes of Damascus, the Levant vACC is committed to enhancing your virtual aviation experience.</p>
+
+    <h3 class="subtitle">Upcoming Events</h3>
+    <div class="scroll-container">
+        <div class="scroll-content">
+
+            <div class="event-card">
+                <a target="_blank" href="https://my.vatsim.net/events/sky-connect-dubai-to-beirut">
+                    <img src="https://images-ext-1.discordapp.net/external/cfwmLHOPrOH8GZ40esg0aWOEhnXJzfw3kMfCrMVXES0/https/vatsim-my.nyc3.digitaloceanspaces.com/events/gUoLgQCOYW1KSwzZUvZyXQHAWzYEmpDogt1chnAV.jpg?format=webp&width=1216&height=684" alt="Event Image">
+                </a>
+                
+                <div class="horizon">
+                    <a target="_blank" href="https://my.vatsim.net/events/sky-connect-dubai-to-beirut">
+                        <h3>Sky Connect: Dubai to Beirut</h3>
+                    </a>
+                    
+                    <p>29th SEP – 17:00 to 20:00 Zulu</p>
+                </div>
+                
+            </div>
+            <div class="event-card">
+                <a target="_blank" href="https://my.vatsim.net/events/beirut-radar-ops">
+                    <img src="https://images-ext-1.discordapp.net/external/KFXcLglIdl7HDM_E9lsSJsIlDW7XG7bwXxNQ2ci31ao/https/vatsim-my.nyc3.digitaloceanspaces.com/events/1mgTOTmjn83nf4Kg12rkOjRjZseuDeilcUUZl7gf.png?format=webp&quality=lossless&width=1216&height=684" alt="Event Image">
+                </a>          
+                <div class="horizon">
+                    <a target="_blank" href="https://my.vatsim.net/events/beirut-radar-ops">
+                        <h3>Beirut Radar Ops</h3>
+                    </a>
+                    <p>17th OCT, 17:00 to 20:00 Zulu</p>
+                </div>
+            </div>
+            
+            
+            
+            <!-- Add more .event-card blocks as needed -->
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+{% endblock %}

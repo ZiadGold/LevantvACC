@@ -1,0 +1,359 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<!-- <script>
+    const element = document.querySelector('.md-banner__inner.md-grid.md-typeset');
+    if (element) {
+    element.remove();
+    }
+
+</script> -->
+<link rel="stylesheet" href="../assets/stylesheets/otherpages.css">
+<!-- Hero -->
+
+<section class="container">
+    <!-- Background Video -->
+    <!-- <video autoplay muted loop playsinline class="bg-media">
+        <source src="../assets/videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+    <style>
+
+    th, td {
+        text-align: center;
+    }
+    .fade {
+        width: 100%;
+        bottom: 0;
+        height: 5rem;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #03060F);
+    }
+    
+
+    .bg-cover {
+      background-image: url(../assets/images/tower.png);
+    }
+    .bg-no-repeat {
+        background-repeat: no-repeat;
+    }
+    .bg-center {
+        background-position: center;
+    }
+    .bg-cover {
+        background-size: cover;
+    }
+    .h-\[40vh\] {
+        height: 40vh;
+    }
+
+
+    .style-0 {
+        background-color: rgba(0, 0, 0, 0.5);
+        scrollbar-color: oklch(1 0 0 / 0.6) rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+        height: 100%;
+    }
+
+    .style-1 {
+        max-width: 1536px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 309.188px;
+        display: flex;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 32px;
+        padding-left: 32px;
+        scrollbar-color: oklch(1 0 0 / 0.35) rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+    }
+
+    .style-2 {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 700;
+        gap: 8px;
+        color: #cacaca;
+        align-items: center;
+        display: flex;
+        scrollbar-color: oklch(0.835945 0.05614 88.8045 / 0.35) rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+    }
+
+    .style-3 {
+        scrollbar-color: oklch(0.835945 0.05614 88.8045 / 0.35) rgba(0, 0, 0, 0);
+        display: block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+    }
+
+    .style-4 {
+        scrollbar-color: oklch(0.835945 0.05614 88.8045 / 0.35) rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+    }
+
+    .style-7 {
+        scrollbar-color: oklch(0.835945 0.05614 88.8045 / 0.35) rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        border-width: 0px;
+        border-style: solid;
+        border-color: rgb(229, 231, 235);
+    }
+</style>
+<section class="bg-cover bg-center bg-no-repeat h-[40vh]">
+  <div class="style-0"> 
+      <div class="style-1">
+          <div class="style-2"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="style-3">
+                  
+                  <circle cx="10" cy="8" r="5" class="style-4"></circle>
+                  
+                  <path d="M2 21a8 8 0 0 1 10.434-7.62" class="style-4"></path>
+                  
+                  <circle cx="18" cy="18" r="3" class="style-4"></circle>
+                  
+                  <path d="m22 22-1.9-1.9" class="style-4"></path>
+                  
+                  
+                  
+              </svg>
+              
+              ATC Roster
+              
+          </div>
+      </div>
+  </div>
+  <div class="fade"></div>
+
+</section>
+</section>
+
+<!-- ATC ROSTER TABLE -->
+
+
+
+
+{% endblock %}
+{% block content %}
+
+<style>
+
+    [data-md-color-scheme="slate"] {
+
+
+        .check {
+            color: lime;
+        }
+        .x {
+            color: red;
+        }
+        .grad {
+            color: rgb(234 179 8 / 1);
+        }
+        th {
+        color: grey !important;
+        }
+        .md-typeset table:not([class]) th {
+        font-weight: bold;
+        background-color: transparent;
+        }
+    
+
+    }
+
+    [data-md-color-scheme="default"] {
+        .check {
+            color: green;
+        }
+        .x {
+            color: darkred;
+        }
+        .grad {
+            color: rgb(151, 115, 7);
+        }
+        .md-main {
+            background-color: #1e2d48;
+        }
+
+        .fade {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #1e2d48);
+        }
+    }
+
+    .md-typeset table:not([class]) td:not([align]), .md-typeset table:not([class]) th:not([align]) {
+    text-align: left;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    }
+    .md-main__inner {
+        max-width: none !important;
+    }
+
+    .md-typeset__scrollwrap {
+        display: block;
+        margin-left: 2.2rem;
+    }
+
+</style>
+
+
+
+<style>
+    .tabs {
+    font-size: 0.65rem;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: white;
+  }
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+
+    user-select: none;
+  }
+  .tab.active {
+    border-bottom: solid white;
+
+  }
+  .tab:not(.active) {
+    border-bottom: solid #666666;
+  }
+
+</style>
+
+<div class="tabs">
+  <div class="tab active" data-src="http://127.0.0.1:8000/assets/json/atcroster.json" data-type="roster">ATC Roster</div>
+  <div class="tab" data-src="http://127.0.0.1:8000/assets/json/visitingatc.json" data-type="visiting">Visiting ATC</div>
+</div>
+
+
+<div class="md-typeset__scrollwrap" id="roster-container">
+    <div id="table-container" class="md-typeset__table">
+      <p>Loading...</p>
+    </div>
+  </div>
+
+
+  
+<script>
+(() => {
+  const icons = {
+    check: `<svg class="check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>`,
+    x: `<svg class="x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>`,
+    grad: `<svg class="grad" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>`
+  };
+
+  function renderRosterTable(data) {
+    if (!data.columns || !data.data) return false;
+    let html = '<table><thead><tr>';
+    data.columns.forEach(col => html += `<th>${col}</th>`);
+    html += '</tr></thead><tbody>';
+    data.data.forEach(atc => {
+      html += '<tr>';
+      html += `<td><a target="_blank" href="https://stats.vatsim.net/stats/${atc.CID}">${atc.CID}</a></td>`;
+      data.columns.forEach(col => {
+        if (col === 'CID') return;
+        let val = atc[col];
+        if (['GND', 'TWR', 'APP', 'CTR'].includes(col)) {
+          if (val === 'true') val = icons.check;
+          else if (val === 'false') val = icons.x;
+          else if (val === 'training') val = icons.grad;
+        }
+        html += `<td>${val}</td>`;
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+    return html;
+  }
+
+  function renderVisitingTable(data) {
+    if (!data.columns || !data.data) return false;
+    let html = '<table><thead><tr>';
+    data.columns.forEach(col => html += `<th>${col}</th>`);
+    html += '</tr></thead><tbody>';
+    data.data.forEach(atc => {
+      html += '<tr>';
+      html += `<td><a target="_blank" href="https://stats.vatsim.net/stats/${atc.CID}">${atc.CID}</a></td>`;
+      data.columns.forEach(col => {
+        if (col === 'CID') return;
+        html += `<td>${atc[col]}</td>`;
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+    return html;
+  }
+
+  async function loadData(url, type) {
+    const tableContainer = document.getElementById('table-container');
+    if (!tableContainer) return;
+    tableContainer.innerHTML = `<p>Loading...</p>`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('Network error');
+      const data = await res.json();
+      const html = type === 'roster' ? renderRosterTable(data) : renderVisitingTable(data);
+      if (!html) throw new Error('No data found');
+      tableContainer.innerHTML = html;
+    } catch (e) {
+      tableContainer.innerHTML = `<p>No Data Found.</p>`;
+    }
+  }
+
+  function initTabs() {
+    const tabs = document.querySelectorAll('.tab');
+    const tableContainer = document.getElementById('table-container');
+    if (!tabs.length || !tableContainer) return;
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        loadData(tab.dataset.src, tab.dataset.type);
+      });
+    });
+
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab) {
+      loadData(activeTab.dataset.src, activeTab.dataset.type);
+    }
+  }
+
+  // Init on normal hard reload
+  document.addEventListener('DOMContentLoaded', initTabs);
+
+  // Init on MkDocs Material soft navigation
+  if (typeof document$ !== 'undefined') {
+    document$.subscribe(initTabs);
+  }
+})();
+</script>
+
+
+
+
+
+{% endblock %}
+
