@@ -11,7 +11,7 @@ nav:
       - Pilot resource center: https://my.vatsim.net/learn
       - Virtual Airlines: https://my.vatsim.net/virtual-airlines
     - Controllers:
-      - ATC Roster: http://127.0.0.1:8000/atcroster/
+      - ATC Roster: atcroster.md
 
 
     - aerodrome
