@@ -1,5 +1,6 @@
 ---
   title: Aerodrome
+  description: Access Standard Operating Procedures (SOPs) for controlling within the Levant vACC. These documents ensure consistency, safety, and realism in every session.
 ---
 <figure markdown>
 ![Aerodrome](img/hero_banner.png)

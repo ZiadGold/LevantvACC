@@ -1,6 +1,6 @@
 # Project Information
 site_name: Levant vACC
-site_description: Access essential tools and information for pilots and controllers in the Levant vACC. From charts and procedures to training and sector files, everything you need for a seamless and realistic experience on the VATSIM network is here.
+site_description: Levant vACC is a virtual area control center covering Lebanon, Syria, and Iraq on the VATSIM network.
 site_url: https://ziadgold.github.io/LevantvACC
 repo_url: https://github.com/ZiadGold/LevantvACC
 repo_name: ZiadGold/LevantvACC
