@@ -1,2 +1,2 @@
 # LevantvACC
-The website for the LevantvACC website.
+The repository for the LevantvACC website.
